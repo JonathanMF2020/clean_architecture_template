@@ -1,8 +1,8 @@
-# Uso de movie-teca!
+# Template de Clean Architecture
 
 Este es un proyecto con el principal objetivo de tener un template de los principios **SOLID**, utilizando **clean architecture** con el control de estados de **Bloc**
 
-# Reglas de uso
+## Reglas de uso
 Existen 2 capas principales las cuales son **core** y **features**
 
 - features: Son los fragmentos de codigo para funcionalidades determinadas que nos permiten tener un mejor acercamiento
@@ -59,6 +59,6 @@ A continuación haremos saber los estandares de codificacion utilizados en el pr
 
 - Todo codígo que deba ser reutilizado se almacena en core
 - Las constantes debe ir dentro de core > constantes
-- 
+- Continuara
 # Comandos utilizados
 > flutter pub run build_runner build
