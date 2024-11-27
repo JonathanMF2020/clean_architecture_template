@@ -1,4 +1,4 @@
-# Template de Clean Architecture
+# Template de Clean Architecture(Ultima modificación: 27/11/2024)
 
 Este es un proyecto con el principal objetivo de tener un template de los principios **SOLID**, utilizando **clean architecture** con el control de estados de **Bloc**
 
@@ -61,4 +61,4 @@ A continuación haremos saber los estandares de codificacion utilizados en el pr
 - Las constantes debe ir dentro de core > constantes
 - Continuara
 # Comandos utilizados
-> flutter pub run build_runner build
+> flutter pub run build_runner build // Este compila todo el contenido
