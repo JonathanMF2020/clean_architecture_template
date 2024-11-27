@@ -1,0 +1,61 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    # Reduce the noise of specific warnings/errors if needed
+    avoid_print: ignore
+    non_constant_identifier_names: ignore
+    public_member_api_docs: ignore
+    unnecessary_import: ignore
+
+linter:
+  rules:
+    ## Core Rules
+    - always_declare_return_types          # Enforces return types for methods/functions.
+    - avoid_empty_else                    # Avoid empty else statements.
+    - avoid_print                         # Disallow print statements in production.
+    - avoid_returning_null_for_void       # Avoid returning null in void methods.
+    - camel_case_types                    # Enforce camel case for type names.
+    - constant_identifier_names           # UPPER_CASE for constant identifiers.
+    - curly_braces_in_flow_control_structures  # Always use braces for control structures.
+    - diagnostic_describe_all_properties  # Enforce properties in diagnostic methods.
+    - empty_catches                       # Disallow empty catch blocks.
+    - file_names                          # Enforce snake_case for file names.
+    - iterable_contains_unrelated_type    # Prevent mismatched types in contains().
+    - join_return_with_assignment         # Simplify return statements when possible.
+    - library_prefixes                    # Enforce prefixes for imports if needed.
+    - non_constant_identifier_names       # Avoid non-constant identifier naming styles.
+    - prefer_adjacent_string_concatenation # Avoid unnecessary string interpolation.
+    - prefer_collection_literals          # Prefer literal syntax for collections.
+    - prefer_const_constructors           # Use const constructors whenever possible.
+    - prefer_final_fields                 # Prefer final for class fields where possible.
+    - prefer_foreach                      # Prefer forEach over for-loops for readability.
+    - prefer_function_declarations_over_variables # Use named functions instead of function expressions.
+    - prefer_typing_uninitialized_variables # Specify types for uninitialized variables.
+    - slash_for_doc_comments              # Use /// for documentation comments.
+    - sort_constructors_first             # Place constructors at the top of the class.
+    - test_types_in_equals                # Prevent type mismatches in equality checks.
+    - use_key_in_widget_constructors      # Ensure widgets have a key if necessary.
+
+    ## Flutter-Specific Rules
+    - always_put_control_body_on_new_line # Improve readability in Flutter control structures.
+    - avoid_unnecessary_containers        # Avoid using containers without properties.
+    - prefer_const_literals_to_create_immutables # Prefer const for creating immutable collections.
+    - use_late_for_private_fields_and_variables  # Use `late` when applicable for initialization.
+
+    ## Performance and Readability
+    - avoid_redundant_argument_values     # Remove redundant arguments in methods/constructors.
+    - avoid_setters_without_getters       # Avoid having setters without corresponding getters.
+    - prefer_final_in_for_each            # Use final in for-each loops for immutability.
+    - unnecessary_null_checks             # Remove unnecessary null checks.
+
+    ## Documentation
+    - comment_references                  # Use valid references in comments.
+    - public_member_api_docs              # Enforce documentation for public APIs.
+
+    ## Best Practices
+    - avoid_field_initializers_in_const_classes # Avoid field initializers in const classes.
+    - no_duplicate_case_values            # Prevent duplicate values in switch-case.
+    - avoid_classes_with_only_static_members # Use top-level functions instead.
+    - provide_deprecation_message         # Add a deprecation message when using @deprecated.
+    - unnecessary_lambdas                 # Avoid lambdas when functions can be directly passed.
