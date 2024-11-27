@@ -87,9 +87,6 @@ BLoC usa tres ingredientes clave:
 #### **c. Testeabilidad**
 
 -   **Clean Architecture** y **SOLID** aíslan cada capa, haciendo que sea fácil probar la lógica de negocio sin preocuparte por detalles de la interfaz.
--   **BLoC** facilita probar que los eventos generen los estados correctos, lo que asegura que tu app funcione como debe.#### **c. Testeabilidad**
-
--   **Clean Architecture** y **SOLID** aíslan cada capa, haciendo que sea fácil probar la lógica de negocio sin preocuparte por detalles de la interfaz.
 -   **BLoC** facilita probar que los eventos generen los estados correctos, lo que asegura que tu app funcione como debe.
 ## Introducción a la plantilla
 Existen 2 capas principales las cuales son **core** y **features**
