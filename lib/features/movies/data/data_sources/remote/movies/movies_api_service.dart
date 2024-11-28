@@ -6,7 +6,7 @@ import '../../../models/dto/movie_dto/movie_dto.dart';
 
 part 'movies_api_service.g.dart';
 
-@RestApi(baseUrl: newsAPIBaseURL)
+@RestApi(baseUrl: apiBaseURL)
 abstract class MoviesApiService {
   factory MoviesApiService(Dio dio) = _MoviesApiService;
 

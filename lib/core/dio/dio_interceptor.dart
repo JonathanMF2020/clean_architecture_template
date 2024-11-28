@@ -1,12 +1,11 @@
 import 'package:dio/dio.dart';
-
-import '../constants/constants.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class DioInterceptor extends Interceptor {
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
     options.headers.addAll({
-      'Authorization': 'Bearer $newsAPIKey',
+      'Authorization': 'Bearer ${dotenv.env['API_KEY']}',
       'Content-Type': 'application/json;charset=utf-8',
     });
 

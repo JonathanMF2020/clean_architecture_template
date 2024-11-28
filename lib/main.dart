@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:movie_teca/core/bloc_observer/simple_bloc_observer.dart';
 import 'package:movie_teca/features/movies/presentation/bloc/movies/movie_bloc.dart';
 import 'package:movie_teca/features/movies/presentation/bloc/movies/movie_event.dart';
@@ -13,6 +14,7 @@ import 'injection_container.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load();
   await initializeDependencies();
   Bloc.observer = SimpleBlocObserver();
   runApp(const MyApp());

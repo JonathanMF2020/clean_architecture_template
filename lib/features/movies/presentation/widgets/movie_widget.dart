@@ -44,4 +44,10 @@ class MovieWidget extends StatelessWidget {
       ),
     );
   }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty<MovieEntity?>('movie', movie));
+  }
 }

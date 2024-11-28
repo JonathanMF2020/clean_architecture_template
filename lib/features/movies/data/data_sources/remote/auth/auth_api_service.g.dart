@@ -1,5 +1,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
+// ignore_for_file: avoid_redundant_argument_values
+
 part of 'auth_api_service.dart';
 
 // **************************************************************************

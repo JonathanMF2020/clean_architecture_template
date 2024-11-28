@@ -5,9 +5,7 @@ import 'package:movie_teca/features/movies/data/data_sources/remote/auth/auth_ap
 import 'package:movie_teca/features/movies/data/repository/auth_repository_impl.dart';
 import 'package:movie_teca/features/movies/domain/repository/auth_repository.dart';
 import 'package:movie_teca/features/movies/domain/usecases/auth/create_session.dart';
-import 'package:movie_teca/features/movies/domain/usecases/movie/save_favorite.dart';
 import 'package:movie_teca/features/movies/presentation/bloc/auth/auth_bloc.dart';
-import 'package:movie_teca/features/movies/presentation/bloc/favorites/favorites_bloc.dart';
 
 import 'features/movies/data/data_sources/local/secure_storage.dart';
 import 'features/movies/data/data_sources/remote/movies/movies_api_service.dart';
@@ -40,10 +38,8 @@ Future<void> initializeDependencies() async {
 
   sl.registerLazySingleton(() => GetMoviesUseCase(sl()));
   sl.registerLazySingleton(() => CreateSessionUseCase(sl(), sl()));
-  sl.registerLazySingleton(() => SaveFavoriteUseCase(sl()));
 
   // Blocs
   sl.registerFactory(() => MovieBloc(sl()));
   sl.registerFactory(() => AuthBloc(sl()));
-  sl.registerFactory(() => FavoritesBloc(sl()));
 }

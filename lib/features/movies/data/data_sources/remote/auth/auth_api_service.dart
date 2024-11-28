@@ -6,7 +6,7 @@ import '../../../../../../core/constants/constants.dart';
 
 part 'auth_api_service.g.dart';
 
-@RestApi(baseUrl: newsAPIBaseURL)
+@RestApi(baseUrl: apiBaseURL)
 abstract class AuthApiService {
   factory AuthApiService(Dio dio) = _AuthApiService;
 
