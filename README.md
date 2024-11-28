@@ -175,6 +175,7 @@ A continuación, haremos saber los estándares de codificación utilizados en el
 - Siempre que algun elemento se itere en la presentacion debe generarse un widget mandandolo a llamar para mantener mayor control
 - Todos los widgets sin excepcion deben heredar la key para mejorar el perfomance
 - El manejo de API KEYS o datos privados debe hacerse desde el .env
+- Cada servicio consumido debe tener pruebas unitarios con datos mockups
 # Comandos utilizados
 > flutter pub run build_runner build 
 
