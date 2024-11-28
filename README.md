@@ -155,6 +155,7 @@ A continuación un listado de librerias consumidas dentro del template
 | ionicons|0.2.2|Iconos en presentación de iOS|  
 | json_annotation|4.8.0|Convierte modelos a metodos json (toJson y fromJson)|  
 | flutter_secure_storage|9.2.2|Almacenamiento local de la aplicación|  
+| flutter_dotenv|5.0.2|Variables privadas|  
 
 
 ## Estandares de codificacion
@@ -174,5 +175,12 @@ A continuación, haremos saber los estándares de codificación utilizados en el
 - Siempre que algun elemento se itere en la presentacion debe generarse un widget mandandolo a llamar para mantener mayor control
 - Todos los widgets sin excepcion deben heredar la key para mejorar el perfomance
 # Comandos utilizados
-> flutter pub run build_runner build // Este compila todo el contenido
+> flutter pub run build_runner build 
 > flutter test
+## Variables del .env
+```
+API_KEY=<Tu api key>
+```
+
+
+
